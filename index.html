@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+</head>
+<body>
+
+	<div class="mdiv">
+		<div class="container">
+
+			<div class="heading">
+				<h2 align="center">Weather Forecast</h2>
+			</div>
+			<center>
+				<div align="center" class="userinput">
+			<form class="form">
+				<div class="inp"><input type="text" name="cityname" id="cityName" placeholder="Enter city name"></div>
+				<div align="center"><button type="button" onclick="fetchCity()" class="searchbut"><img src="https://openclipart.org/image/2400px/svg_to_png/213239/Search-icon.png"></button></div>
+			</form>
+			</div>
+			</center>
+			<div class="img" align="center">
+				<img src="https://static.vecteezy.com/system/resources/previews/008/854/791/original/thunderstorm-rain-icon-weather-forecast-meteorological-sign-3d-render-png.png" height="200px" width="200px">
+			</div>
+			<div class="cityheading" align="center">
+				<h5 id="city">City Name</h5><br>
+				<span id="temp">0°C</span>
+			</div>
+			<div class="tbl" align="center">
+				<table align="center" cellspacing="25px">
+					<tr>
+						<td align="center">
+							<h3>Wind Speed</h3>
+							<span id="wind_speed">0 km/hr</span>
+						</td>
+						<td align="center">
+							<h3>Humidty</h3>
+							<span id="humidity">0 g/kg</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
